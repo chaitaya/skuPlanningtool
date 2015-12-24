@@ -1,0 +1,228 @@
+package com.bridgei2i.common.constants;
+
+public class ApplicationConstants {
+	
+	public static final String APPLICATION_ERRORS_CACHE_KEY = "applicationErrorsKey";
+	public static final String APPLICATION_LOGGED_IN_USER = "appLoggedInUser";
+	public static final String APPLICATION_ACT_AS_USER = "appActAsUser";
+	public static final String APPLICATION_USERS_MAP = "appUsersMap";
+	public static final String APPLICATION_ERRORS_SESSION_KEY = "applicationErrorsSessionKey";
+	public static final int EXCEPTION=1;
+	public static final int WARNING=2;
+	public static final int INFORMATION=3;
+	public static final int CUSTOM_EXCEPTION=1;
+	public static final String PAGE_TEMPLATES_CACHE_KEY = "pageTemplates";
+	public static final String MASTER_COMMIT_STATUS_ID_MAP = "masterCommitStatusIdMap";
+	public static final String MASTER_COMMIT_STATUS_NAME_MAP = "masterCommitStatusNameMap";
+	public static final int planningCycleID=1;
+	public static final int planningCycleStartYear=2015;
+	public static final int planningCycleStartWeek=13;
+	public static  int forecastYear=2015;
+	public static  int forecastWeek=13;
+	public static final String SELECTED_FILTER_VALUES_MAP="selectedFilterValuesMapObj";
+	public static final String FILTER_LIST_VALUES_MAP="filterListValuesMapObj";
+	public static final String SELECTED_DASHBOARD_FILTER_VALUES_MAP="selectedDashboardFilterValuesMapObj";
+	public static final String DASHBOARD_FILTER_LIST_VALUES_MAP="dashboardFilterListValuesMapObj";
+	public static final String SELECTED_REPORT_FILTER_VALUES_MAP="selectedReportFilterValuesMapObj";
+	public static final String REPORT_FILTER_LIST_VALUES_MAP="ReportFilterListValuesMapObj";
+	public static final String SELECTED_OVERRIDE_REPORT_FILTER_VALUES_MAP="selectedOverrideReportFilterValuesMapObj";
+	public static final String OVERRIDE_REPORT_FILTER_LIST_VALUES_MAP="overrideReportFilterListValuesMapObj";
+	public static final String OVERRIDE_REPORT_PLANNING_CYCLE_FILTER_VALUES_MAP="OverrideReportFilterPlanningCycleValuesMapObj";
+	public static final String SELECTED_HISTORICAL_ACTUAL_REPORT_FILTER_VALUES_MAP="selectedHistoricalActualReportFilterValuesMapObj";
+	public static final String SELECTED_HISTORICAL_FORECAST_REPORT_FILTER_VALUES_MAP="selectedHistoricalForecastReportFilterValuesMapObj";
+	public static final String HISTORICAL_ACTUAL_REPORT_FILTER_LIST_VALUES_MAP="historicalActualReportFilterListValuesMapObj";
+	public static final String HISTORICAL_FORECAST_REPORT_FILTER_LIST_VALUES_MAP="historicalForecastReportFilterListValuesMapObj";
+	public static final String REVIEW_STATUS ="REVIEW";
+	public static final String INITIATE_STATUS ="INITIATED";
+	public static final String UPLOAD_STATUS ="UPLOAD";
+	
+	public static final String HOME_FORM_BEAN = "homeBean";
+	public static final String CONTACT_US_BEAN = "contactUsBean";
+	
+	public static final String MASTER_BENCH_MARKS_CACHE_KEY = "masterBenchMarkCacheKey";
+	public static final String MASTER_BENCH_MARKS_MAP_CACHE_KEY = "masterBenchMarksMapCacheKey";
+	public static final String MASTER_FUNCTIONS_CACHE_KEY = "masterFunctionsCacheKey";
+	public static final String MASTER_FUNCTIONS_MAP_CACHE_KEY = "masterFunctionsMapCacheKey";
+	public static final String MASTER_CHART_TYPE_MAP_CACHE_KEY = "masterChartTypeMapCacheKey";
+	public static final String MASTER_DISTRIBUTION_TYPES_HIERARCHY_CACHE_KEY = "masterDistributionTypeHierarchyCacheKey";
+	public static final String MASTER_DISTRIBUTION_TYPES_NON_HIERARCHY_CACHE_KEY = "masterDistributionTypeNonHierarchyCacheKey";
+	public static final String MASTER_REPORT_STATUS_CACHE_KEY = "masterReportStatusCacheKey";
+	public static final String MASTER_REPORT_STATUS_MAP_CACHE_KEY = "masterReportSatusMapCacheKey";
+	public static final String MASTER_CHART_TYPES_CACHE_KEY = "masterChartTypeCacheKey";
+	public static final String ALL_VARIABLE_NAMES_CACHE_KEY = "allVariableNamesCachekey";
+	public static final String COMMENT_VARIABLE_NAMES_CACHE_KEY = "commentVariableNamesCachekey";
+	public static final String SEGMENT_VARIABLE_NAMES_CACHE_KEY = "segmentVariableNamesCachekey";
+	public static final String VARIABLE_NAMES_MAP_CACHE_KEY = "variableNamesMapCacheKey";
+	public static final String NOTES_MAP_CACHE_KEY="notesMapCacheKey";
+	public static final String TOP_LEVELS_LIMIT="topLevelsLimit";
+	public static final String COLUMN_NAMES_MAP_CACHE_KEY = "columnNamesMapCacheKey";
+	public static final String COMMENT_CACHE_KEY = "commentCacheKey";
+	public static final String KEY_MEASURE_CACHE_KEY = "keyMeasureCacheKey";
+	public static final String KEY_MEASURE_WITH_SURVEY_VARIABLE_CACHE_KEY = "keyMeasureWithSurveyVariableCacheKey";
+	public static final String WEIGHT_VARIABLE_CACHE_KEY = "weightVariableCacheKey";
+	public static String VERBATIM_DESTINATION_FOLDER = "verbatimDestinationFolder";
+	public static String CODEBOOK_ACTUAL_RECODE_VALUES_CACHE_KEY = "codeBookActualValueRecodeValuesCacheKey";
+	public static final String MINIMUM_RESPONDENTS = "minimum_respondents";
+	public static final String X = "x";
+	public static final String Y = "y";
+	public static final String TREND_REPORT_THRESHOLD ="trend_report_threshold";
+	public static final String TEAM_REPORT_THRESHOLD ="team_report_threshold";
+	public static final String WNS_AVG_COUNTRY_COLUMN_NAME ="country";
+	public static final String WNS_TEAM_REPORT ="teamReport";
+	public static final String MANAGER_AVG_BYLOCATION ="manager_avg_byLocation";
+	public static final String WNS_BENCH_MARK_COLUMN_NAME ="segment_variable";
+	public static final String SURVEY_VARIABLES_LIST = "surveyVariablesList";
+	public static final String REPORT_METADATA_MAP = "reportmetadatalist";
+	public static final String SKU_LIST = "SKU_LIST";
+	public static final String PRODUCT_LINE_LIST = "PRODUCT_LINE_LIST";
+	public static final String PRODUCT_HIERARCHY1_LIST = "PRODUCT_HIERARCHY1_LIST";
+	public static final String PRODUCT_HIERARCHY2_LIST = "PRODUCT_HIERARCHY2_LIST";
+	public static final String PRODUCT_HIERARCHY4_LIST = "PRODUCT_HIERARCHY4_LIST";
+	public static final String PL_CLASS_LIST = "PL_CLASS_LIST";
+	public static final String PL_SCORECARD_LIST = "PL_SCORECARD_LIST";
+	public static final String PRODUCT_MANAGER_LIST = "PRODUCT_MANAGER_LIST";
+	public static final String EVENT_CALENDAR_MAP = "eventCalendarMap";
+	
+	public static final String ALL_PAGE_TEMPLATES_CACHE_KEY = "allPageTemplatesCacheKey";
+	public static final int LIMIT=26;
+	
+	public static final String RAW_DATA_TABLE = "dataTable";
+	public static final String DATA_TABLE = "dataTable";
+	public static final String OUTLIER_TABLE = "outlierTable";
+	public static final String VARIABLE_NAMES_TABLE = "dataTable";
+	public static final String SKU_USER_MAPPING = "sku_user_mapping";
+	public static final String OVERRIDE_ASP_LOG = "override_asp_log";
+	public static final String OVERRIDE_UNITS_LOG = "override_units_log";
+	public static final String ORDER_WEEK = "orderWeek";
+	public static final String BUSINESS_TYPE = "businessType";
+	public static final String PRODUCT_NUMBER = "productNumber";
+	public static final String SKU_LIST_ID = "skuListId";
+	public static final String USER_ID = "userId";
+	public static final String PRODUCT_ID = "productId";
+	public static final String PLANNING_CYCLE_ID= "planningCycleId";
+	public static final String ID= "id";
+	public static final String FORECASTING_ASP_ID = "forecastingAspId";
+	public static final String FORECASTING_UNITS_ID = "forecastingUnitsId";
+	public static final String MODEL= "model";
+	public static final String CATEGORY = "category";
+	public static final String SCORECARD_ROLL_UP_COLUMN = "scorecardRollup";
+	public static final String USERS = "users";
+	public static final String ROLES = "role";
+	public static final String PRODUCT_DESCRIPTION = "productDescription";
+	public static final String PRODUCT_HIERARCHY_II ="productHierarchyII";
+	public static final String PLANOGRAM = "planogram";
+	public static final String PLANNING_LOG_LIST = "planningLogList";
+	public static final String FORECAST_LIST_MAP = "forecastingListMap";
+	public static final String FORECAST_UNITS_LIST_COPY = "forecastingUnitsListCopy";
+	public static final String FORECAST_ASP_LIST_COPY = "forecastingAspListCopy";
+	public static final String PLANNING_CYCLE_BEAN = "planningCycleBean";
+	public static final String REPORT_BEAN = "reportBean";
+	public static final String WEEK_YEAR_SEPARATOR = "weekYearSeparator";
+	public static final String ACTIVE_PLANNINGCYCLE_OBJ ="activePlanningCycleObj";
+	public static final String ACTIVE_UTILITIES_TAB ="activeUtilitiesTab";
+	public static final String TARGET_UTILITIES_TAB ="targetUtilitiesTab";
+	public static final String NPI_UTILITIES_TAB ="NPIUtilitiesTab";
+	public static final String EOL_UTILITIES_TAB ="EOLUtilitiesTab";
+	public static final String NEW_SKU_UTILITIES_TAB ="NEWSKUUtilitiesTab";
+	public static final String ASP = "asp";
+	public static final String FORECASTED_ASP_LIST = "forecastedAspList";
+	public static final String FORECASTED_UNITS_LIST = "forecastedUnitsList";
+	public static final String ACCURACY_LIST = "accuracyList";
+	public static final String ACTUALS_LIST = "actualsList";
+	public static final String ACCURACY_LIST_MAP = "accuracyListMap";
+	public static final String FORECASTED_REVENUE_LIST =  "forecastedRevenueList";
+	public static final String HISTORICAL_REPORT_LIST =  "historicalReportList";
+	
+	public static final String OVERRIDE_LEVEL_PRODUCT ="PRODUCT";
+	public static final String OVERRIDE_LEVEL_MODEL ="MODEL";
+	public static final String OVERRIDE_LEVEL_CATEGORY ="CATEGORY";
+	
+	public static final String ADMIN = "BI2I_ADMIN";
+	public static final String PRODUCT_MANAGER = "PRODUCT_MANAGER";
+	public static final String CATEGORY_MANAGER = "CATEGORY_MANAGER";
+	public static final String CATEGORY_DIRECTOR = "CATEGORY_DIRECTOR";
+	public static final String FINANCE_DIRECTOR = "FINANCE_DIRECTOR";
+	
+	public static final String AVAILABLE_FOR_PM = "AVAILABLE_FOR_PM";
+	public static final String PARTIALLY_COMMITTED_BY_PM = "PARTIALLY_COMMITTED_BY_PM";
+	public static final String COMMITTED_BY_PM = "COMMITTED_BY_PM";
+	public static final String COMMITTED_BY_CM = "COMMITTED_BY_CM";
+	public static final String COMMITTED_BY_CD = "COMMITTED_BY_CD";
+	public static final String AVAILABLE_FOR_CM = "AVAILABLE_FOR_CM";
+	public static final String CYCLE_FREEZED = "CYCLE_FREEZED";
+	public static final String ACTIVE_PLANNING_TAB = "activePlanningTab";
+<<<<<<< HEAD
+	public static final String CLOSED_PLANNING_CYCLE_LIST = "cloedPlanningCycleList";
+=======
+	public static final String PLANOGRAM_REPORT_FILTER_LIST_VALUES_MAP = "planogramReportFilterListValuesMapObj";
+	public static final String SELECTED_PLANOGRAM_REPORT_FILTER_VALUES_MAP = "selectedPlanogramReportFilterValuesMapObj";
+	
+	public static final String SCHEDULER_DATA_FOLDER = "dataFolder";
+	public static final String SCHEDULER_BACKUP_FOLDER = "backupFolder";
+	public static final String DT_CLIENT_CONSUMER = "DTClientConsumer";
+	public static final String DT_CLIENT_BUSINESS = "DTClientConsumer";
+	public static final String NB_CLIENT_CONSUMER = "NBClientConsumer";
+	public static final String NB_CLIENT_BUSINESS = "NBClientConsumer";
+	public static final String CATEGORY_SCORECARD_ROLLUP_MAPPING = "categoryScorecardRollupMapping";
+	
+>>>>>>> master
+	public static final String[] DEFAULT_COLORS = {
+		"28B9F5"
+		,"711371"
+		,"C4D5EB"
+		,"5694CB"
+		,"7AA9DA"
+		,"A4C0E3"
+		,"C4D5EB"
+		,"D99694"
+		,"E3C8F8"
+		,"F8C8DD"
+		,"DDF8C8"
+		,"C8F8E3"
+		,"ECD571"
+		,"71C6EC"
+		,"EC7189"
+		,"C6EC71"
+		,"EC9771"
+		,"D471EB"
+		,"71ECD5"
+		,"EB71C5"
+		,"71E5EC"
+		,"71EB79"
+		,"71A7EC"
+		,"b8cce4"
+		,"d99694"
+		,"fbd5b5"
+		,"d7e3bc"
+		,"bfbfbf"
+		,"39608E"
+		,"903A38"
+		,"748C41"
+		,"5F4979"
+		,"368195"
+		,"BA7032"
+		,"4572A7"
+		,"AA4643"
+		,"89A54E"
+		,"71588F"
+		,"4198AF"
+		,"DB843D"
+		,"4F81BD"
+		,"C0504D"
+		,"9BBB59"
+		,"8064A2"
+		,"4BACC6"
+		,"F79646"
+		,"93A9CF"
+		,"D19392"
+		,"B9CD96"
+		,"A99BBD"
+		,"91C3D5"
+		,"F9B590"
+		,"BCC8DF"
+		,"E0BCBC"
+ };
+	
+	
+
+}

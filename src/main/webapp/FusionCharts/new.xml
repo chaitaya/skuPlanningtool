@@ -1,0 +1,111 @@
+<chart caption='Annual Revenue' subcaption='In Million $'  xaxisname='Year' PYaxisname='Sales in M$' SYAxisName='Cost as % of Revenue' decimals='0' numberPrefix='$' numberSuffix='M' sNumberSuffix='%' setAdaptiveSYMin='1' showPlotBorder='1' palette='2' labelDisplay='Rotate' slantLabels='1'>
+
+    <categories>
+        <category name="200508"/>
+        <category name="200608"/>
+        <category name="200708"/>
+        <category name="200808"/>
+        <category name="200908"/>
+	<category name="201008"/>
+</categories>
+
+    <dataset>
+
+        <dataset seriesName="Black" color="AFD8F8" showValues="1">
+        <set value="197"/>
+        <set value="213"/>
+        <set value="166"/>
+        <set value="197"/>
+        <set value="233"/>
+	<set value="270"/>
+</dataset>
+
+<dataset seriesName="Other" color="F6BD0F" showValues="1">
+        <set value="0"/>
+        <set value="0"/>
+        <set value="0"/>
+        <set value="0"/>
+        <set value="5"/>
+	<set value="0"/>
+</dataset>
+
+<dataset seriesName="White" color="8BBA00" showValues="1">
+        <set value="499"/>
+        <set value="443"/>
+        <set value="440"/>
+        <set value="448"/>
+        <set value="485"/>
+	<set value="423"/>
+</dataset>
+
+<dataset seriesName="American Indian" color="AFD8F8" showValues="1">
+        <set value="1"/>
+        <set value="1"/>
+        <set value="5"/>
+        <set value="2"/>
+        <set value="5"/>
+	<set value="5"/>
+</dataset>
+
+<dataset seriesName="Asian" color="F6BD0F" showValues="1">
+        <set value="14"/>
+        <set value="14"/>
+        <set value="17"/>
+        <set value="23"/>
+        <set value="14"/>
+	<set value="30"/>
+</dataset>
+
+<dataset seriesName="multiracial" color="8BBA00" showValues="1">
+	<set value="35"/>
+        <set value="30"/>
+        <set value="23"/>
+        <set value="35"/>
+	<set value="53"/>
+        <set value="3"/>
+</dataset>
+
+<dataset seriesName="N" color="8BBA00" showValues="1">
+        <set value="1"/>
+        <set value="1"/>
+        <set value="0"/>
+        <set value="0"/>
+	<set value="0"/>
+        <set value="13"/>
+</dataset>
+
+<dataset seriesName="Hispanic" color="8BBA00" showValues="1">
+        <set value="26"/>
+        <set value="24"/>
+        <set value="18"/>
+        <set value="25"/>
+	<set value="12"/>
+        <set value="26"/>
+</dataset>
+
+    </dataset>
+
+    <dataSet>
+
+        
+
+    </dataSet>
+
+    <lineSet seriesname='Cost as % of Revenue' showValues='0' lineThickness='4' >
+
+        <set value='32.23' />
+
+        <set value='30.46' />
+
+        <set value='32.78' />
+
+        <set value='30.64' />
+
+        <set value='30.01' />
+
+        <set value='27.43' />
+
+    </lineSet>
+
+
+</chart>

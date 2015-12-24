@@ -1,0 +1,78 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="dataSource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource">
+
+		<property name="driverClass" value="${jdbc.driverClassName}" />
+		<property name="jdbcUrl" value="${jdbc.databaseurl}" />
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+	    <property name="maxPoolSize" value="${jdbc.maxPoolSize}" />
+        <property name="minPoolSize" value="${jdbc.minPoolSize}" />
+	    <property name="maxConnectionAge" value="0"/>
+	    <property name="acquireRetryAttempts" value="5"/>
+	    <property name="maxIdleTimeExcessConnections" value="300"/>
+	    <property name="idleConnectionTestPeriod" value="540"/>
+	    <property name="preferredTestQuery" value="SELECT 1"/>
+	    <property name="testConnectionOnCheckout" value="false"/>
+	    <property name="testConnectionOnCheckin" value="false"/>
+	    <property name="checkoutTimeout" value="60000"/>
+	    <property name="maxIdleTime" value="500"/>
+    
+	</bean>
+
+	<bean id="mysessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+
+		<property name="configLocation" value="/WEB-INF/hibernate.cfg.xml" />
+		<property name="configurationClass">
+			<value>org.hibernate.cfg.AnnotationConfiguration</value>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${jdbc.dialect}</prop>
+				<prop key="show_sql">true</prop>
+
+			</props>
+		</property>
+	</bean>
+
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="mysessionFactory" />
+	</bean>
+
+	<bean id="planningDAO" class="com.bridgei2i.common.dao.PlanningDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+	</bean>
+	
+	<bean id="applicationDAO" class="com.bridgei2i.common.dao.ApplicationDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+	</bean>
+	
+	<bean id="categoryLevelSummaryDAO" class="com.bridgei2i.common.dao.CategoryLevelSummaryDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+	</bean>
+	
+	<bean id="utilitiesDAO" class="com.bridgei2i.common.dao.UtilitiesDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+	</bean>
+	
+	<bean id="reportDAO" class="com.bridgei2i.common.dao.ReportDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+	</bean>
+</beans>

@@ -1,0 +1,2 @@
+region,productNumber,productDescription,business,productLine,hierarchy1,hierarchy2,hierarchy4,plClass,plScorecard,model,expectedASP,expectedESC
+US,PU1951,Test NPI,Traffic Business,52,PL52,STO,Desktop,PSG,PSG Other,Calculator,450,350

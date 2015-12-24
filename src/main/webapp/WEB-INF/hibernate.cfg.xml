@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="mysessionFactory">
+			
+  		 <mapping class="com.bridgei2i.vo.RawData"/>
+  		 <mapping class="com.bridgei2i.vo.Data2"/>
+  		 <mapping class="com.bridgei2i.common.vo.Users"/>
+  		 <mapping class="com.bridgei2i.common.vo.Roles"/>
+  		 <mapping class="com.bridgei2i.common.vo.MasterErrorCodes"/>
+
+  		 <mapping class="com.bridgei2i.vo.SkuList"/>
+  		   <mapping class="com.bridgei2i.vo.TargetData"/>
+  		 <mapping class="com.bridgei2i.vo.VariableNames"/>
+  		 <mapping class="com.bridgei2i.vo.PlanningCycle"/>
+  		 <mapping class="com.bridgei2i.vo.MasterPlanningStatus"/>
+  		 <mapping class="com.bridgei2i.vo.MasterWorkflowStatus"/>
+  		 <mapping class="com.bridgei2i.vo.OverrideCommit"/>
+  		 <mapping class="com.bridgei2i.vo.OverrideUnitsLog"/>
+  		 <mapping class="com.bridgei2i.vo.OverrideAspLog"/>
+  		 <mapping class="com.bridgei2i.vo.OverrideUnitsLogComment"/>
+  		 <mapping class="com.bridgei2i.vo.OverrideAspLogComment"/>
+  		 <mapping class="com.bridgei2i.vo.ForecastingProductMargin"/>
+  		 <mapping class="com.bridgei2i.common.vo.PageTemplate"/>
+  		 <mapping class="com.bridgei2i.common.vo.PageTemplateCharts"/>
+  		 <mapping class="com.bridgei2i.common.vo.PageTemplateFilters"/>
+  		   <mapping class="com.bridgei2i.vo.ForecastingUnits"/>
+  		   <mapping class="com.bridgei2i.common.vo.Data"/>
+  		   <mapping class="com.bridgei2i.vo.ForecastingASP"/>
+  		   <mapping class="com.bridgei2i.vo.ForecastingRevenue"/>
+  		   <mapping class="com.bridgei2i.vo.ForecastingESC"/>
+  		   <mapping class="com.bridgei2i.vo.ForecastingPM"/>
+  		   <mapping class="com.bridgei2i.vo.SkuUserMapping"/>
+  		   <mapping class="com.bridgei2i.vo.OverrideAspLog"/>
+  		   <mapping class="com.bridgei2i.vo.CategoryUserMapping"/>
+  		   <mapping class="com.bridgei2i.vo.CategoryList"/>
+  		    <mapping class="com.bridgei2i.vo.OverrideCommitCategory"/>
+  		     <mapping class="com.bridgei2i.vo.NPI"/>
+  		     <mapping class="com.bridgei2i.vo.MasterReportStatus"/>
+  		     <mapping class="com.bridgei2i.vo.MasterEventCalendar"/>
+  		     <mapping class="com.bridgei2i.vo.OverrideCategoryLevelCommit"/>
+  		     <mapping class="com.bridgei2i.vo.MasterCommitStatus"/>
+  		     <mapping class="com.bridgei2i.vo.BTBData"/>
+  		      <mapping class="com.bridgei2i.vo.MasterFiscalCalendar"/>
+  		      <mapping class="com.bridgei2i.vo.CategoryScorecardRollupMapping"/>
+  		      <mapping class="com.bridgei2i.vo.PlanningLogUserSessions"/>
+ 	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.menu.definition" template="/jsp/layout/layout.jsp?view=1">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/jsp/layout/header.jsp?isFromPrivacy=2"/>
+		<put-attribute name="body" value="" />
+		<put-attribute name="menu" value="/jsp/menu.jsp" />
+		<put-attribute name="overviewmenu" value="/jsp/overviewMenu.jsp" />
+		<put-attribute name="error" value="/jsp/errorDisplay/errorDisplay.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+
+	<definition name="base.definition" template="/jsp/layout/layout.jsp?view=2">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/jsp/layout/header.jsp?isFromPrivacy=2" />
+		<put-attribute name="navigation" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="error" value="/jsp/errorDisplay/errorDisplay.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+	<definition name="base.privacy.terms.definition" template="/jsp/layout/layout.jsp?view=2">
+               <put-attribute name="title" value="" />
+               <put-attribute name="header" value="/jsp/layout/header.jsp?isFromPrivacy=1"/>
+               <put-attribute name="body" value="" />
+               <put-attribute name="error" value="/jsp/errorDisplay/errorDisplay.jsp" />
+               <put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+       </definition>
+	
+	<definition name="popUp.base.definition" template="/jsp/layout/layout.jsp?view=3">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	
+	<definition name="designReportTemplate" extends="base.definition">
+		<put-attribute name="title" value="DesignReportTemplate" />
+		<put-attribute name="body" value="/jsp/designReportTemplate.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="uploadData" extends="base.definition">
+		<put-attribute name="title" value="Upload" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=1" />
+		<put-attribute name="body" value="/jsp/uploadData.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="tabs" extends="base.definition">
+		<put-attribute name="title" value="Tabs" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=4" />
+		<put-attribute name="body" value="/jsp/tabs.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="runForecast" extends="base.definition">
+		<put-attribute name="title" value="RunForecast" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=1" />
+		<put-attribute name="body" value="/jsp/runForecast.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=1" />
+		<put-attribute name="body" value="/jsp/home.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="planningLog" extends="base.definition">
+		<put-attribute name="title" value="PlanningLog" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=3" />
+		<put-attribute name="body" value="/jsp/planningLog.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=7" />
+	</definition>
+	
+	<definition name="categoryLevelSummary" extends="base.definition">
+		<put-attribute name="title" value="Category Level Summary" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=4" />
+		<put-attribute name="body" value="/jsp/categoryLevelSummary.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="financeManagerFreeze" extends="base.definition">
+		<put-attribute name="title" value="Override Freeze" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=5" />
+		<put-attribute name="body" value="/jsp/financeManagerFreeze.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="newProductIntroduction" extends="base.definition">
+		<put-attribute name="title" value="New Product Introduction" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=6" />
+		<put-attribute name="body" value="/jsp/newProductIntroduction.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=2" />
+	</definition>
+	
+	<definition name="mappedNPI" extends="base.definition">
+		<put-attribute name="title" value="MappedNPI" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=6" />
+		<put-attribute name="body" value="/jsp/mappedNPI.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=3" />
+	</definition>
+	
+	<definition name="newSKU" extends="base.definition">
+		<put-attribute name="title" value="Assign SKU" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=6" />
+		<put-attribute name="body" value="/jsp/newSKU.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=5" />
+	</definition>
+	
+	<definition name="reportTemplateList" extends="base.definition">
+		<put-attribute name="title" value="ReportTemplateList" />
+		<put-attribute name="body" value="/jsp/reportTemplateList.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="reportPreview" extends="base.definition">
+		<put-attribute name="title" value="ReportPreview" />
+		<put-attribute name="body" value="/jsp/reportPreview.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="popUpCategoryName" extends="popUp.base.definition">
+		<put-attribute name="title" value="PopUpCategoryName" />
+		<put-attribute name="body" value="/jsp/popUpCategoryName.jsp" />
+	</definition>
+
+	<definition name="dashboard" extends="base.definition">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=2" />
+		<put-attribute name="body" value="/jsp/dashboard.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+
+    <definition name="popUpComments" extends="popUp.base.definition">
+		<put-attribute name="title" value="PopUpComments" />
+		<put-attribute name="body" value="/jsp/popUpComments.jsp" />
+	</definition>
+	
+	<definition name="workspace" extends="base.definition">
+		<put-attribute name="title" value="Workspace" />
+		<put-attribute name="body" value="/jsp/workspace.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="uploadMetaData" extends="base.definition">
+		<put-attribute name="title" value="UploadMetaData" />
+		<put-attribute name="body" value="/jsp/uploadMetaData.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="privacy_policy" extends="base.privacy.terms.definition">
+               <put-attribute name="title" value="Privacy Policy" />
+               <put-attribute name="body" value="/jsp/privacyPolicy.jsp" />
+       </definition>
+       
+       <definition name="terms_Of_Use" extends="base.privacy.terms.definition">
+               <put-attribute name="title" value="Terms of Use" />
+               <put-attribute name="body" value="/jsp/termsOfUse.jsp" />
+       </definition>
+       
+     <definition name="eol" extends="base.definition">
+			<put-attribute name="title" value="End of Life" />
+			<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=6" />
+			<put-attribute name="body" value="/jsp/eol.jsp" />
+			<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=4" />
+	 </definition>
+       <definition name="categoryLevelDashboard" extends="base.definition">
+		<put-attribute name="title" value="Category Level Summary" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=4" />
+		<put-attribute name="body" value="/jsp/dashboard.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="categoryLevelFreezeDashboard" extends="base.definition">
+		<put-attribute name="title" value="Override Freeze" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=5" />
+		<put-attribute name="body" value="/jsp/dashboard.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="targetData" extends="base.definition">
+		<put-attribute name="title" value="Targets" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=6" />
+		<put-attribute name="body" value="/jsp/targetData.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="report" extends="base.definition">
+		<put-attribute name="title" value="Reports" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=4" />
+		<put-attribute name="body" value="/jsp/report.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="categoryLevelReport" extends="base.definition">
+		<put-attribute name="title" value="Reports" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=4" />
+		<put-attribute name="body" value="/jsp/report.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="categoryLevelFreezeReport" extends="base.definition">
+		<put-attribute name="title" value="Reports" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=5" />
+		<put-attribute name="body" value="/jsp/report.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="financeLevelDashboard" extends="base.definition">
+		<put-attribute name="title" value="Category Level Summary" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=5" />
+		<put-attribute name="body" value="/jsp/dashboard.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	
+	<definition name="financeLevelreport" extends="base.definition">
+		<put-attribute name="title" value="Reports" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=5" />
+		<put-attribute name="body" value="/jsp/report.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	
+	</definition>
+		<definition name="accuracyReport" extends="base.definition">
+		<put-attribute name="title" value="Accuracy Report" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=13" />
+		<put-attribute name="body" value="/jsp/accuracyReport.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+		
+	<definition name="historicalActualReport" extends="base.definition">
+		<put-attribute name="title" value="Actuals" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=12" />
+		<put-attribute name="body" value="/jsp/historicalActualReport.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="overrideReport" extends="base.definition">
+		<put-attribute name="title" value="Override Report" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=14" />
+		<put-attribute name="body" value="/jsp/overrideReport.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="categoryReport" extends="base.definition">
+		<put-attribute name="title" value="Category Report" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=3" />
+		<put-attribute name="body" value="/jsp/categoryLevelSummary.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="executiveReport" extends="base.definition">
+		<put-attribute name="title" value="Executive Report" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=15" />
+		<put-attribute name="body" value="/jsp/report.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="planogramReport" extends="base.definition">
+		<put-attribute name="title" value="Planogram Report" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=16" />
+		<put-attribute name="body" value="/jsp/planogramReport.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="changePassword" extends="base.definition">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=1" />
+		<put-attribute name="body" value="/jsp/changePassword.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	<definition name="forgotPassword" extends="base.definition">
+		<put-attribute name="title" value="Forgot Password" />
+		<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=1" />
+		<put-attribute name="body" value="/jsp/forgotPassword.jsp" />
+		<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	</definition>
+	 <definition name="skuForecastValues" extends="base.definition">
+			<put-attribute name="title" value="sku Forecast Values" />
+			<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=17" />
+			<put-attribute name="body" value="/jsp/skuForecastValues.jsp" />
+			<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	 </definition>
+	  <definition name="filteredPlanningLog" extends="base.definition">
+			<put-attribute name="title" value="Filtered Planning Log" />
+			<put-attribute name="navigation" value="/jsp/navigation.jsp?navibar=1" />
+			<put-attribute name="body" value="/jsp/filteredPlanningLog.jsp" />
+			<put-attribute name="footer" value="/jsp/layout/footer.jsp?view=1" />
+	 </definition>
+</tiles-definitions>

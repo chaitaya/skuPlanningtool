@@ -1,0 +1,26 @@
+#chartBox{
+	height:480px;
+	margin-top:0px;
+	margin-left:5px;
+	border: 1px solid #C1C1C1;
+	border-radius:3px;
+}
+
+#chartbox-title{
+padding-top:3px;
+background-color:#F5F5F5;
+border-bottom: 1px solid #C1C1C1;
+height:20px;
+border-radius: 3px 3px 0px 0px;
+}
+
+input{
+	border:1px solid #C1C1C1;
+	border-radius:3px;
+}
+
+select{
+	border:1px solid #C1C1C1;
+	width:120px;
+	color:#444;
+}

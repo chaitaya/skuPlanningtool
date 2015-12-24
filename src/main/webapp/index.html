@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+   <script src="/EmployeeSurveySatisfaction/js/jquery.min.js"></script>
+  <script src="/EmployeeSurveySatisfaction/js/wordcloud2.js"></script>
+  <script src="/EmployeeSurveySatisfaction/js/tooltip.jquery.js"></script>
+  <style>
+
+  .canvas-container {
+    overflow-x: auto;
+    overflow-y: visible;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .canvas {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .canvas.hide {
+    display: none;
+  }
+
+  .html-canvas > span {
+    transition: text-shadow 1s ease, opacity 1s ease;
+    -webkit-transition: text-shadow 1s ease, opacity 1s ease;
+    -ms-transition: text-shadow 1s ease, opacity 1s ease;
+  }
+
+  .html-canvas > span:hover {
+    text-shadow: 0 0 10px, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+    opacity: 0.5;
+  }
+
+  .box {
+    pointer-events: none;
+    position: absolute;
+    box-shadow: 0 0 10px 10px rgba(200, 200, 200, 0.5);
+    border-radius: 50px;
+    cursor: pointer;
+    
+  }
+.wordcloud-container{
+	position:relative;
+	float:left;
+}
+
+
+  </style>
+</head>
+<body>
+<div class="wordcloud-container">
+ <div class="span12" id="canvas-container1" class="canvas-container" >
+          <canvas id="canvas1" class="canvas"></canvas>
+          <div id="not-supported1" class="alert" hidden>
+     		 <strong>Your browser is not supported.</strong>
+    	</div>
+          <div id="html-canvas1" class="canvas hide html-canvas"></div>
+        </div>
+</div>
+  <script>
+  jQuery(function ($) {
+	    var $canvas1 = $('#canvas1');
+	    var $htmlCanvas1 = $('#html-canvas1');
+	    var $canvasContainer1 = $('#canvas-container1');
+	    var $loading1 = $('#loading1');
+
+	    if (!WordCloud.isSupported) {
+	      $('#not-supported1').prop('hidden', false);
+	      return;
+	    }
+	    
+	    var $box1 = $('<div id="box4" hidden class="box"/>');
+	    $canvasContainer1.append($box1);
+	    window.drawBox1 = function drawBox1(item, dimension) {
+	      if (!dimension) {
+	        $box1.prop('hidden', true);
+	        return;
+	      }
+	      var dppx =1;
+	      $box1.prop('hidden', false);
+	      $box1.css({
+	        left: dimension.x / dppx + 'px',
+	        top: dimension.y / dppx + 'px',
+	        width: dimension.w / dppx + 'px',
+	        height: dimension.h / dppx + 'px'
+	      });
+	      $box1.html("<div style=\"color:#FFF;border-radius:30px;background-color:#666;font-weight:bold;padding:5px;margin-right:-10px;margin-top:-10px;position: relative;float: right;\">"+item[1]+"</div>");   
+	    };
+
+	    $loading1.prop('hidden', false);
+	      var devicePixelRatio = parseFloat(1);
+	      var width = $('#canvas-container1').width();
+	      var height =  Math.floor(width * 0.65);
+	      var pixelWidth = 900;
+	      var pixelHeight = 350;
+	      $canvas1.css({'width': '', 'height': '' });
+	      $canvas1.attr('width', pixelWidth);
+	      $canvas1.attr('height', pixelHeight);
+	      $htmlCanvas1.css({'width': pixelWidth + 'px', 'height': pixelHeight + 'px'});
+
+	      // Set the options object
+	      var options1 = {
+	    	  gridSize: 10,
+	    	  weightFactor: 1,
+	    	  fontFamily: 'calibri,Finger Paint, cursive, sans-serif',
+	    	  hover:window.drawBox1,
+	    	  click: function(item) {
+	    	    alert(item[0] + ': ' + item[1]);
+	    	  },
+	    	  backgroundColor: '#fff'
+	    	};
+
+	      // Put the word list into options
+	        var list = [];
+	        list.push(['wns asadasdASDASDF', 150]); 
+	        options1.list = list;
+
+	      WordCloud([$canvas1[0], $htmlCanvas1[0]], options1);
+	  });
+  </script>
+</body>
+</html>
